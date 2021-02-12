@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import CoinstTable from './containers/CoinsTable';
+import CoinTradeTable from './components/CoinTradeTable/CoinTradeTable.js';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -31,6 +32,7 @@ function App() {
         userName="Usuario"
       />
       <CoinstTable coinsData={coinsData} />
+      <CoinTradeTable coinsData={coinsData} />
     </div>
   );
 }
